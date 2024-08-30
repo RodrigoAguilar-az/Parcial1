@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Álbum</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .header {
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+        .header p {
+            color: #6c757d;
+            margin-bottom: 20px;
+        }
+        .buttons {
+            margin-bottom: 30px;
+        }
+        .btn {
+            padding: 10px 20px;
+            margin: 0 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 5px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            color: white;
+        }
+        .btn-secondary {
+            background-color: #6c757d;
+            color: white;
+        }
+        .album {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .card {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            width: calc(33.333% - 20px);
+            overflow: hidden;
+        }
+        .card img {
+            width: 100%;
+            height: 180px;
+            background-color: #6c757d;
+        }
+        .card-body {
+            padding: 15px;
+            text-align: left;
+        }
+        .card-body p {
+            margin: 0 0 10px;
+        }
+        .card-body .btn {
+            margin-right: 5px;
+            padding: 5px 10px;
+            font-size: 0.9em;
+        }
+        .card-footer {
+            padding: 10px 15px;
+            background-color: #f8f9fa;
+            border-top: 1px solid #e9ecef;
+            text-align: right;
+            font-size: 0.85em;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Ejemplo de álbum</h1>
+            <p>Algo corto y principal sobre la colección a continuación: su contenido, el creador, etc. Hágalo breve y agradable, pero no demasiado corto para que la gente no lo pase por alto por completo.</p>
+            <div class="buttons">
+                <button class="btn btn-primary">Llamada a la acción principal</button>
+                <button class="btn btn-secondary">Acción secundaria</button>
+            </div>
+        </div>
+        <div class="album">
+            <div class="card">
+                <img src="imagen.png" alt="Thumbnail">
+                <div class="card-body">
+                    <p>Esta es una tarjeta más amplia con texto de apoyo a continuación como una introducción natural a contenido adicional. Este contenido es un poco más largo.</p>
+                    <button class="btn btn-outline-primary">Ver</button>
+                    <button class="btn btn-outline-secondary">Editar</button>
+                </div>
+                <div class="card-footer">
+                    9 mins
+                </div>
+            </div>
+            <div class="card">
+                <img src="imagen.png" alt="Thumbnail">
+                <div class="card-body">
+                    <p>Esta es una tarjeta más amplia con texto de apoyo a continuación como una introducción natural a contenido adicional. Este contenido es un poco más largo.</p>
+                    <button class="btn btn-outline-primary">Ver</button>
+                    <button class="btn btn-outline-secondary">Editar</button>
+                </div>
+                <div class="card-footer">
+                    9 mins
+                </div>
+            </div>
+            <div class="card">
+                <img src="imagen.png" alt="Thumbnail">
+                <div class="card-body">
+                    <p>Esta es una tarjeta más amplia con texto de apoyo a continuación como una introducción natural a contenido adicional. Este contenido es un poco más largo.</p>
+                    <button class="btn btn-outline-primary">Ver</button>
+                    <button class="btn btn-outline-secondary">Editar</button>
+                </div>
+                <div class="card-footer">
+                    9 mins
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
